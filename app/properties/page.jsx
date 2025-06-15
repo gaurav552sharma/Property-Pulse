@@ -3,11 +3,11 @@ import Pagination from "@/components/Pagination";
 import connectDB from "@/config/database";
 import PropertyCard from "@/components/PropertyCard";
 
-const PropertyPage = async ({ searchParams: { page = 1, pageSize = 2 } }) => {
+const PropertyPage = async ({ searchParams }) => {
   await connectDB();
 
-  const pageParam = searchParams.get?.("page") || "1";
-  const pageSizeParam = searchParams.get?.("pageSize") || "2";
+  const pageParam = searchParams?.page || "1";
+  const pageSizeParam = searchParams?.pageSize || "2";
 
   const page = parseInt(pageParam, 10);
   const pageSize = parseInt(pageSizeParam, 10);
@@ -29,11 +29,7 @@ const PropertyPage = async ({ searchParams: { page = 1, pageSize = 2 } }) => {
             ))}
           </div>
         )}
-        <Pagination
-          page={parseInt(page)}
-          pageSize={parseInt(pageSize)}
-          totalItems={total}
-        />
+        <Pagination page={page} pageSize={pageSize} totalItems={total} />
       </div>
     </section>
   );
