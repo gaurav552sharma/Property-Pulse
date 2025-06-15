@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏡 Property Pulse
 
-## Getting Started
+**Property Pulse** is a modern real estate listing platform built using **Next.js** and integrated with powerful features like **Google Authentication**, **MongoDB database**, **image upload with Cloudinary**, and **interactive maps**.
 
-First, run the development server:
+🌐 **Live Demo**: [https://property-pulse-git-main-gaurav-sharmas-projects-668f5bd3.vercel.app](https://property-pulse-git-main-gaurav-sharmas-projects-668f5bd3.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- 🔍 **Explore Properties** – View and browse real estate listings with pagination.
+- 🧾 **Add New Listings** – Authenticated users can add property listings along with images.
+- 🖼️ **Image Upload** – Seamless image upload using Cloudinary API.
+- 🔐 **Google Login** – Secure authentication through Google OAuth using NextAuth.js.
+- 🌍 **Interactive Maps** – View property locations on a dynamic map using MapTiler.
+- 📍 **Location Detection** – Automatically fetch latitude and longitude based on address using OpenCage API.
+- 📱 **Mobile Friendly** – Clean and responsive design using Tailwind CSS.
+- ⚡ **Optimized Performance** – Server-side rendering with Next.js for fast load times.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+| Category         | Technologies Used                        |
+|------------------|-------------------------------------------|
+| **Frontend**     | Next.js, Tailwind CSS                     |
+| **Backend**      | API Routes in Next.js, Mongoose           |
+| **Database**     | MongoDB (Cloud with MongoDB Atlas)        |
+| **Auth**         | NextAuth.js (Google OAuth 2.0)            |
+| **Maps & Geo**   | MapTiler Maps + OpenCage Geocoder API     |
+| **Media Upload** | Cloudinary API                            |
+| **Hosting**      | Vercel                                     |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 Project Highlights
 
-## Deploy on Vercel
+- 🗂️ **Modular Structure**: The app follows a clean and modular folder structure, making it easy to scale.
+- 🧾 **Dynamic Pagination**: Built-in support for changing page number and page size on the fly.
+- 🛡️ **Secure Auth Flow**: Only authenticated users can post new properties.
+- 📦 **SEO Friendly**: Optimized pages using Next.js server-side rendering (SSR).
+- 🌐 **Environment-aware Configs**: Automatically switches between development and production configs during deployment.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🧑‍💻 Author
+
+**Gaurav Sharma**  
+Fullstack Developer | MERN Stack Enthusiast  
+📧 gaurav552sharma@gmail.com  
+
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+⭐️ If you like this project, feel free to **star it**, **fork it**, or share it with others!
